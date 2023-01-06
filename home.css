@@ -1,120 +1,179 @@
-body {
-    background-color: rgb(0, 0, 0);
+*{
+    list-style: none;
+    text-decoration: none;
     margin: 0;
-}
-
-main {
-    background: linear-gradient(180deg, white 0%, rgb(255, 255, 255) 80%, rgba(0,0,0,1) 100%);
     padding: 0;
-    text-align: center;
-    padding-bottom: 50px;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
 }
 
-#splashpage {
-    padding-top: 8%;
-    text-align: center;
-    background-color: rgba(240, 255, 255, 0);
-    width: 100%;
-    height: 50%;
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Noto+Serif+TC:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Noto+Serif+TC:wght@900&family=Rubik+Spray+Paint&display=swap');
+
+@keyframes ensoSpin {
+    from {
+        transform: rotate(520deg);
+        opacity: 0;
+    }
+
+    to {
+        transform: rotate(145deg);
+        opacity: 1;
+    }
 }
 
-#splashtext {
-    background-color: rgba(255, 0, 0, 0);
-    font-size: 150%;
+@keyframes splashtextFadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
 }
 
-#name {
-    background-color: rgba(0, 0, 255, 0);
-    margin-top: -20px;
-    font-size: 400%;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-weight: 900;
-}
-
-.about {
-    background-color: rgb(36, 36, 36);
-    color: white;
+@media screen and (orientation: landscape) {
     
-    width: 95%;
-    max-width: 950px;
-    min-width: 0px;
+    html, body {
+        margin:0;
+        padding:0;
+        height:100%;
+    }
 
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: -15px;
-    margin-bottom: 35px;
+    body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        
+        justify-items: center;
 
-    padding-top: 1px;
-    padding-bottom: 1px;
+        margin-right: clamp(175px, 15%, 15%); /*the minimum, preferred, and maximum values, in that order.*//* Same as the width of the sidenav */
 
-    border-radius: 0px 10px 0px 10px;
+        background: black;
+    }
 
-    text-align: center;
-    font-size: 125%;
-}
+    main {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
 
-#logo {
-    width: 25%;
-    min-width: 200px;
-    max-width: 400px;
+        min-width: 100%;
+        height: 100%;
+        text-align: center;
 
-    transform: rotate(145deg);
+        padding: 10px;
 
-    display: block;
-    background-color: rgba(127, 255, 212, 0);
-    margin-left: auto;
-    margin-right: auto;
-}
+        color: white;
+        background: rgb(255,255,);
+        background: linear-gradient(0deg, rgba(0,0,0,1) 25%, rgba(255,255,255,1) 100%); 
+    }
 
+    .sidenav {
+        height: 100%;
+        width: 15%;
+        min-width: 175px;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        right: 0;
+        background-color: #111;
+        overflow-x: hidden;
+        
+        border-left: 2px solid white;
+    }
 
-p {
-    font-family: 'Courier New', Courier, monospace, sans-serif;
-    margin-left: 15px;
-    margin-right: 15px;
-}
+    .sidenav ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        text-align: left;
 
-footer {
-    background-color: black;
-    color: white;
-    margin-top: -16px;
-    text-align: center;
-}
+        height: 100%;
 
-footer ul {
-    background-color: rgba(0, 128, 0, 0);
-    text-align: center;
-    padding-left: 1%;
-    padding-right: 1%;
-}
+        /*background-color: aquamarine;*/
+    }
 
-footer li {
-    display: inline-block;
-    background-color: rgba(255, 0, 0, 0);
+    .sidenav li {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 100%;
+
+        padding: 10%;
+
+        /*background-color: violet;
+        border: solid 1px purple;*/
+    }
+
+    .sidenav a {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        justify-items: center;
+
+        height: 75%;
+
+        border: solid 1px white;
+        border-radius: 0px 10px 10px 0px;
+
+        text-align: center;
+
+        font-size: 125%;
+
+        color: white;
+        background-color: black;
+        /* background-color: rgb(130, 130, 130); */
+    }
+
+    .sidenav a:hover {
+        color: black;
+        background-color: white;
+    }
+
+    #logo {
+        width: 25%;
+        max-width: 1100px;
+        min-width: 125px;
     
-    margin-top: 5px;
-    margin-bottom: 5px;
-    margin-right: 1%;
-    margin-left: 1%;
-
-    padding: 10px;
-
-    width: 15%;
-    min-width: 161px;
-    max-width: 200px;
+        animation-name: ensoSpin;
+        animation-duration: 2s;
+        animation-timing-function: ease;
     
-    border-width: 2px;
-    border-color: white;
-    border-style: solid;
-    border-radius: 0px 5px 0px 5px;
+        transform: rotate(145deg);
+    }
 
-    font-size: 110%;
-}
+    #splashtext {
+        display: none;
+        animation-name: splashtextFadeIn;
+        animation-duration: 4s;
+    }
 
-footer a {
-    color: white;
-}
+    #name {
+        font-family: 'Times New Roman', Courier, monospace, sans-serif;
+        font-family: monospace;
+        font-size: 40px;
 
-footer li:hover {
-    background-color: white;
-    color: black;
+        margin: 3%;
+    }
+
+    .about {
+        display: block;
+        background-color: rgb(0, 0, 0);
+        color: white;
+        
+        height: auto;
+        width: 75%;
+        max-width: 950px;
+        min-width: 0px;
+    
+        padding: 30px;
+
+        margin-top: 20px;
+        margin-bottom: 20px;
+    
+        border: 1px solid white;
+        border-radius: 0px 10px 0px 10px;
+    
+        text-align: center;
+
+        font-family: 'Times New Roman', Times, serif;
+        font-size: clamp(20px, 125%, 15px); /*the minimum, preferred, and maximum values, in that order.*/
+    }
 }
