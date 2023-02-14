@@ -1,10 +1,10 @@
 *{
+    font-family: consolas, serif;
     list-style: none;
     text-decoration: none;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Open Sans', sans-serif;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Noto+Serif+TC:wght@900&display=swap');
@@ -13,29 +13,24 @@
 @keyframes ensoSpin {
     from {
         transform: rotate(520deg);
-        opacity: 0;
+        opacity: 1;
+        width: 100%;
+        border-radius: 100%;
     }
 
     to {
         transform: rotate(145deg);
         opacity: 1;
+        width: 25%;
     }
 }
 
-@keyframes splashtextFadeIn {
-    from { opacity: 0; }
-    to { opacity: 1; }
+html {
+    height: 100%;
+    width: 100%;
 }
 
-@media screen and (orientation: landscape) {
-    
-    html, body {
-        margin:0;
-        padding:0;
-        height:100%;
-    }
-
-    body {
+body {
         display: flex;
         align-items: center;
         justify-content: center;
@@ -43,10 +38,9 @@
         
         justify-items: center;
 
-        margin-right: clamp(175px, 15%, 15%); /*the minimum, preferred, and maximum values, in that order.*//* Same as the width of the sidenav */
-
-        background: black;
-    }
+        display: block;
+        height: 100%;
+}
 
     main {
         display: flex;
@@ -65,95 +59,32 @@
         background: linear-gradient(0deg, rgba(0,0,0,1) 25%, rgba(255,255,255,1) 100%); 
     }
 
-    .sidenav {
-        height: 100%;
-        width: 15%;
-        min-width: 175px;
-        position: fixed;
-        z-index: 1;
-        top: 0;
-        right: 0;
-        background-color: #111;
-        overflow-x: hidden;
-        
-        border-left: 2px solid white;
-    }
-
-    .sidenav ul {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-        text-align: left;
-
-        height: 100%;
-
-        /*background-color: aquamarine;*/
-    }
-
-    .sidenav li {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        height: 100%;
-
-        padding: 10%;
-
-        /*background-color: violet;
-        border: solid 1px purple;*/
-    }
-
-    .sidenav a {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        justify-items: center;
-
-        height: 75%;
-
-        border: solid 1px white;
-        border-radius: 0px 10px 10px 0px;
-
-        text-align: center;
-
-        font-size: 125%;
-
-        color: white;
-        background-color: black;
-        /* background-color: rgb(130, 130, 130); */
-    }
-
-    .sidenav a:hover {
-        color: black;
-        background-color: white;
-    }
+   
 
     #logo {
         width: 25%;
         max-width: 1100px;
         min-width: 125px;
+
+        margin-bottom: 10px;
     
         animation-name: ensoSpin;
-        animation-duration: 2s;
+        animation-duration: 3.5s;
         animation-timing-function: ease;
     
         transform: rotate(145deg);
     }
 
     #splashtext {
-        display: none;
-        animation-name: splashtextFadeIn;
-        animation-duration: 4s;
+        margin-top: 20px;
     }
 
     #name {
-        font-family: 'Times New Roman', Courier, monospace, sans-serif;
-        font-family: monospace;
         font-size: 40px;
-
-        margin: 3%;
+        padding: 1%;
     }
 
-    .about {
+    .textbox {
         display: block;
         background-color: rgb(0, 0, 0);
         color: white;
@@ -163,7 +94,7 @@
         max-width: 950px;
         min-width: 0px;
     
-        padding: 30px;
+        padding: 20px 20px 20px 20px;
 
         margin-top: 20px;
         margin-bottom: 20px;
@@ -176,4 +107,3 @@
         font-family: 'Times New Roman', Times, serif;
         font-size: clamp(20px, 125%, 15px); /*the minimum, preferred, and maximum values, in that order.*/
     }
-}
