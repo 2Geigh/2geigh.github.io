@@ -1,0 +1,3 @@
+[submodule "nickgarcia/themes/hugo-bearcub"]
+	path = nickgarcia/themes/hugo-bearcub
+	url = https://github.com/clente/hugo-bearcub

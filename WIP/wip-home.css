@@ -39,8 +39,7 @@ body {
         display: block;
         height: 100%;
 
-        background-color: black;
-        /*background-color: red; */
+        background-color: red;
 }
 
 #splashpage {
@@ -60,7 +59,7 @@ body {
 
         color: white;
         background: rgb(255,255,);
-        background: linear-gradient(0deg, rgba(0,0,0,1) 20%, rgba(255,255,255,1) 100%);
+        background: linear-gradient(0deg, rgba(0,0,0,1) 25%, rgba(255,255,255,1) 100%);
 }  
 
 #logo {
@@ -68,7 +67,6 @@ body {
         max-width: 1100px;
         min-width: 125px;
 
-        margin-top: 2.5%;
         margin-bottom: 2.5%;
     
         animation-name: ensoSpin;
@@ -108,15 +106,6 @@ body {
 
         font-family: 'Times New Roman', Times, serif;
         font-size: clamp(15px, 110%, 25px); /*the minimum, preferred, and maximum values, in that order.*/
-}
-
-
-.textbox a {
-    color: white;
-    font-weight: bold;
-    font-variant: small-caps;
-    text-decoration: underline;
-    font-size: clamp(15px, 115%, 25px); /*the minimum, preferred, and maximum values, in that order.*/
 }
 
 #invitation {
@@ -241,12 +230,4 @@ body {
 
 #rowing {
     background-color: white;
-}
-
-footer {
-    color: gray;
-    font-size: smaller;
-    background-color: black;
-    position: absolute;
-    bottom: 0;
 }
