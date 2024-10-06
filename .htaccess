@@ -1,0 +1,4 @@
+RewriteEngine On
+
+# Redirect to external URLs
+RewriteRule ^$ https://uoftearless.com/about [R=301,L]
