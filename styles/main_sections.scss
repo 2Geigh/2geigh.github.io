@@ -15,17 +15,28 @@ main section {
     width: 100%;
     height: 1000px;
 
+    padding-top: 30px;
+    padding-bottom: 30px;
+
     background-color: orange;
+}
+
+.even {
+    flex-direction: row;
+}
+
+.odd {
+    flex-direction: row-reverse;
 }
 
 main section .img_container {
     display: inline-flex;
     flex-direction: row;
     flex-wrap: wrap;
-    height: 60%;
-    width: 25%;
+    height: 75%;
+    width: 35%;
 
-    border-radius: 100px;
+    border-radius: 0px;
 
     background-color: yellow;
     // overflow-wrap: none;
@@ -47,7 +58,8 @@ main section .text_container {
 
     // background-color: green;
 
-    margin-left: 3vw;
+    padding-left: 3vw;
+    padding-right: 3vw;
     // margin-right: 1vw;
 
     width: 35%;
@@ -62,4 +74,13 @@ main section .text_container {
     background-image: url("/media/pre-university/prairie.jpg");
     background-size: cover;
     background-position: 20% 7%;
+}
+
+#rowing {
+    background-color: navy;
+    background-image: url("/media/rowing/lake.jpg");
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position-y: 60%;
+    background-position-x: 100%;
 }
