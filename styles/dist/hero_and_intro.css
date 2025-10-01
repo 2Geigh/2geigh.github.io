@@ -29,28 +29,43 @@ header {
   align-items: center;
   width: 100%;
   height: auto;
-  background: #0a0a0a;
+  background: black;
   color: white;
   padding: 0%;
 }
 
 #splash-content {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 33vh;
+  height: 90vh;
   padding-top: 30px;
   background-color: #0a0a0a;
   background-image: url("/media/Blue_Sky_with_Clouds.jpg");
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: top;
   background-size: cover;
+}
+
+#hero-image {
+  width: 400px;
+  aspect-ratio: 1/1;
+  margin: 1.75vw;
+  border-radius: 100%;
+  object-fit: cover;
+  object-position: center;
+  /* border-top-left-radius: 500px; */
+  /* border-bottom-left-radius: 500px; */
+  /* box-shadow: -200px 1px 89px -83px rgba(0,0,0,1) inset;
+  -webkit-box-shadow: -200px 1px 89px -83px rgba(0,0,0,1) inset;
+  -moz-box-shadow: -200px 1px 89px -83px rgba(0,0,0,1) inset; */
 }
 
 #splash-text {
   font-size: 3em;
+  color: white;
   font-family: sans-serif;
   /* background-color: violet; */
 }
@@ -72,20 +87,7 @@ header {
   width: 100%;
   padding-top: 100px;
   background-color: #0a0a0a;
-  background: linear-gradient(0deg, #0a0a0a 0%, black 100%);
-}
-
-#hero-image {
-  width: 400px;
-  aspect-ratio: 1/1;
-  border-radius: 100%;
-  object-fit: cover;
-  object-position: center;
-  /* border-top-left-radius: 500px; */
-  /* border-bottom-left-radius: 500px; */
-  /* box-shadow: -200px 1px 89px -83px rgba(0,0,0,1) inset;
-  -webkit-box-shadow: -200px 1px 89px -83px rgba(0,0,0,1) inset;
-  -moz-box-shadow: -200px 1px 89px -83px rgba(0,0,0,1) inset; */
+  background: linear-gradient(180deg, #0a0a0a 0%, black 100%);
 }
 
 #intro-text {
@@ -100,6 +102,7 @@ header {
   font-family: sans-serif;
   line-height: 1.5em;
   font-weight: 100;
+  text-align: justify;
 }
 #intro-text ul {
   margin-left: 1em;
@@ -114,12 +117,14 @@ header {
   flex-direction: column;
   justify-content: space-evenly;
   align-items: end;
-  margin-top: 125px;
-  margin-bottom: 50px;
+  background-color: #0a0a0a;
+  margin-top: 2.5vw;
+  margin-bottom: 3.25vw;
   width: 20%;
-  padding-left: 40%;
-  padding-right: 40%;
+  padding-left: 1vw;
+  padding-right: 1vw;
   height: 10em;
+  border: 1px solid white;
   font-size: 1.6em;
   font-family: serif;
 }

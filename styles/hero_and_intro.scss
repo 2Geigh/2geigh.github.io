@@ -45,29 +45,51 @@ header {
     width: 100%;
     height: auto;
 
-    background: $background_dark_color;
+    background: black;
     color: white;
     padding: 0%;
 }
 #splash-content {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
 
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 33vh;
+    height: 90vh;
 
     padding-top: $header_height;
 
     background-color: $background_dark_color;
     background-image: url("/media/Blue_Sky_with_Clouds.jpg");
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: top;
     background-size: cover;
+}
+#hero-image {
+    width: $intro_profile_image_width;
+    aspect-ratio: 1/1;
+
+    margin: 1.75vw;
+
+    border-radius: 100%;
+
+    object-fit: cover;
+    object-position: center;
+
+    /* border-top-left-radius: 500px; */
+    /* border-bottom-left-radius: 500px; */
+
+    /* box-shadow: -200px 1px 89px -83px rgba(0,0,0,1) inset;
+    -webkit-box-shadow: -200px 1px 89px -83px rgba(0,0,0,1) inset;
+    -moz-box-shadow: -200px 1px 89px -83px rgba(0,0,0,1) inset; */
+
+    // background-color: red;
 }
 #splash-text {
     font-size: 3em;
+
+    color: white;
 
     font-family: sans-serif;
 
@@ -99,29 +121,10 @@ header {
     // padding-right: $intro_text_ul_indent;
 
     background-color: $background_dark_color;
-    background: linear-gradient(0deg,$background_dark_color 0%, black 100%);
+    background: linear-gradient(180deg,$background_dark_color 0%, black 100%);
 }
 
-#hero-image {
-    width: $intro_profile_image_width;
-    aspect-ratio: 1/1;
 
-    // margin: 2.5vw;
-
-    border-radius: 100%;
-
-    object-fit: cover;
-    object-position: center;
-
-    /* border-top-left-radius: 500px; */
-    /* border-bottom-left-radius: 500px; */
-
-    /* box-shadow: -200px 1px 89px -83px rgba(0,0,0,1) inset;
-    -webkit-box-shadow: -200px 1px 89px -83px rgba(0,0,0,1) inset;
-    -moz-box-shadow: -200px 1px 89px -83px rgba(0,0,0,1) inset; */
-
-    // background-color: red;
-}
 #intro-text {
     display: flex;
     flex-direction: column;
@@ -137,6 +140,8 @@ header {
     font-family: sans-serif;
     line-height: 1.5em;
     font-weight: 100;
+
+    text-align: justify;
 
     // background-color: blue;
 
@@ -156,15 +161,17 @@ header {
     justify-content: space-evenly;
     align-items: end;
 
-    // background-color: red;
-    margin-top: 125px;
-    margin-bottom: 50px;
+    background-color: $background_dark_color;
+    margin-top: 2.5vw;
+    margin-bottom: 3.25vw;
     
 
     width: 20%;
-    padding-left: 40%;
-    padding-right: 40%;
+    padding-left: 1vw;
+    padding-right: 1vw;
     height: 10em;
+
+    border: 1px solid white;
 
     font-size: 1.6em;
     font-family: serif;
