@@ -4,11 +4,13 @@ $header_height: min(30px, 2.75vh);
 
 $intro_profile_image_width: clamp(0px, 40vh, 400px);
 
-$intro_text_ul_indent: 1em;
+$intro_text_ul_indent: min(2em, 8vw);
 
 * {
     margin: 0;
     padding: 0;
+
+    font-size: min(22px, 6vw);
 
     // font-family: sans-serif;
 }
@@ -50,6 +52,7 @@ header {
     padding: 0%;
 }
 #splash-content {
+    transform: scaleY(-1);
     display: flex;
     flex-direction: column;
 
@@ -58,16 +61,16 @@ header {
     width: 100%;
     height: min(75vh, 900px);
 
-    padding-top: $header_height;
+    padding-bottom: $header_height;
 
     background-color: $background_dark_color;
     background-image: url("/media/Blue_Sky_with_Clouds.jpg");
     background-repeat: no-repeat;
     background-position: top;
     background-size: cover;
-    transform: scaleY(-1);
 }
 #hero-image {
+    transform: scaleY(-1);
     width: $intro_profile_image_width;
     aspect-ratio: 1/1;
 
@@ -95,16 +98,12 @@ header {
     // filter: brightness(102%);
     // filter: contrast(106%);
     filter: grayscale(100%) hue-rotate(138deg);
-
-    transform: scaleY(-1);
 }
 #hero-image:hover {
     filter: none;
 }
 
 #splash-text {
-    font-size: clamp(15px, 2vw, 3em);
-    font-weight:900;
 
     color: white;
 
@@ -112,6 +111,11 @@ header {
 
     /* background-color: violet; */
     transform: scaleY(-1);
+
+    h1 {
+        font-size: min(9vw, 275%);
+        font-weight: 1000;
+    }
 }
 #tagline {
     /* background-color: red; */
@@ -134,7 +138,7 @@ header {
 
     width: 100%;
 
-    padding-top: 100px;
+    padding-top: min(2vh, 100px);
 
     // padding-right: $intro_text_ul_indent;
 
@@ -147,32 +151,42 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    list-style-position: inside;
+    list-style-position:outside;
 
-    height: $intro_profile_image_width;
-    width: 800px;
+    // height: $intro_profile_image_width;
+    width: clamp(300px, 90%, 800px);
 
-    padding-left: 1.5em;
+    $intro-text_leftright-padding: 7vw;
+    padding-left: $intro-text_leftright-padding;
+    padding-right: $intro-text_leftright-padding; 
+    padding-top: clamp(0.8em, 9vh, 100px);
 
-    font-size: 1.85em;
+    font-size: min(4vh, 1.85em, 24px);
     font-family: sans-serif;
-    line-height: 1.5em;
+    line-height: max(30px, 1.5em);
     font-weight: 100;
 
-    text-align: justify;
+    text-align:left;
 
     // background-color: blue;
 
     ul {
+        $intro-text_ul_margin-top-bottom: 0px;
         margin-left: $intro_text_ul_indent;
+        margin-top: $intro-text_ul_margin-top-bottom;
+        margin-bottom: $intro-text_ul_margin-top-bottom;
 
         li {
-            margin: 0em;
+            $intro-text_ul_li_margin-top-bottom: min(0.75em, 3vh);
+            margin-top: $intro-text_ul_li_margin-top-bottom;
+            margin-bottom: $intro-text_ul_li_margin-top-bottom;
             font-weight: 350;
         }
     }
 }
 #hero blockquote {
+
+    $hero_blockquote_fontsize: 0.95em;
 
     display: flex;
     flex-direction: column;
@@ -180,26 +194,40 @@ header {
     align-items: end;
 
     background-color: $background_dark_color;
-    margin-top: 2.5vw;
-    margin-bottom: 3.25vw;
+    $hero_blockquote_margintopbottom: min(4em, 9vh);
+    margin-top: $hero_blockquote_margintopbottom;
+    margin-bottom: $hero_blockquote_margintopbottom;
     
 
-    width: 20%;
-    padding-left: 1vw;
-    padding-right: 1vw;
-    height: 10em;
+    width: clamp(0px, 70%, 600px);
+    // padding-left: 1vw;
+    // padding-right: 1vw;
+    padding: 1em;
+    // height: 10em;
 
     border: 1px solid white;
 
-    font-size: 1.6em;
+    // font-size: min(1vw, 20px, 1.6em);
     font-family: serif;
-}
-.quote {
-    font-size: 1.1em;
-    font-family: serif;
-}
-#hero blockquote a, #hero blockquote p a {
-    color: inherit;
-    font-style: inherit;
-    text-decoration: inherit;
+
+    i {
+        font-size: $hero_blockquote_fontsize;
+    }
+
+
+    .quote {
+        font-family: serif;
+        margin-bottom: 1em;
+        text-align: left;
+    }
+
+    p {
+        text-align: right;
+
+        a {
+            color: rgb(167, 167, 167);
+
+            font-size: $hero_blockquote_fontsize;
+        }
+    }
 }

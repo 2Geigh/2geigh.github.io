@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  font-size: min(22px, 6vw);
 }
 
 img {
@@ -34,22 +35,23 @@ header {
 }
 
 #splash-content {
+  transform: scaleY(-1);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 100%;
   height: min(75vh, 900px);
-  padding-top: min(30px, 2.75vh);
+  padding-bottom: min(30px, 2.75vh);
   background-color: #0a0a0a;
   background-image: url("/media/Blue_Sky_with_Clouds.jpg");
   background-repeat: no-repeat;
   background-position: top;
   background-size: cover;
-  transform: scaleY(-1);
 }
 
 #hero-image {
+  transform: scaleY(-1);
   width: clamp(0px, 40vh, 400px);
   aspect-ratio: 1/1;
   margin-top: max(1.75vw, 20px);
@@ -62,7 +64,6 @@ header {
   -webkit-box-shadow: -200px 1px 89px -83px rgba(0,0,0,1) inset;
   -moz-box-shadow: -200px 1px 89px -83px rgba(0,0,0,1) inset; */
   filter: grayscale(100%) hue-rotate(138deg);
-  transform: scaleY(-1);
 }
 
 #hero-image:hover {
@@ -70,12 +71,14 @@ header {
 }
 
 #splash-text {
-  font-size: clamp(15px, 2vw, 3em);
-  font-weight: 900;
   color: white;
   font-family: sans-serif;
   /* background-color: violet; */
   transform: scaleY(-1);
+}
+#splash-text h1 {
+  font-size: min(9vw, 275%);
+  font-weight: 1000;
 }
 
 #tagline {
@@ -93,7 +96,7 @@ header {
   align-items: center;
   justify-content: center;
   width: 100%;
-  padding-top: 100px;
+  padding-top: min(2vh, 100px);
   background-color: #0a0a0a;
   background: linear-gradient(180deg, #0a0a0a 0%, black 100%);
 }
@@ -102,21 +105,25 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  list-style-position: inside;
-  height: clamp(0px, 40vh, 400px);
-  width: 800px;
-  padding-left: 1.5em;
-  font-size: 1.85em;
+  list-style-position: outside;
+  width: clamp(300px, 90%, 800px);
+  padding-left: 7vw;
+  padding-right: 7vw;
+  padding-top: clamp(0.8em, 9vh, 100px);
+  font-size: min(4vh, 1.85em, 24px);
   font-family: sans-serif;
-  line-height: 1.5em;
+  line-height: max(30px, 1.5em);
   font-weight: 100;
-  text-align: justify;
+  text-align: left;
 }
 #intro-text ul {
-  margin-left: 1em;
+  margin-left: min(2em, 8vw);
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
 #intro-text ul li {
-  margin: 0em;
+  margin-top: min(0.75em, 3vh);
+  margin-bottom: min(0.75em, 3vh);
   font-weight: 350;
 }
 
@@ -126,24 +133,25 @@ header {
   justify-content: space-evenly;
   align-items: end;
   background-color: #0a0a0a;
-  margin-top: 2.5vw;
-  margin-bottom: 3.25vw;
-  width: 20%;
-  padding-left: 1vw;
-  padding-right: 1vw;
-  height: 10em;
+  margin-top: min(4em, 9vh);
+  margin-bottom: min(4em, 9vh);
+  width: clamp(0px, 70%, 600px);
+  padding: 1em;
   border: 1px solid white;
-  font-size: 1.6em;
   font-family: serif;
 }
-
-.quote {
-  font-size: 1.1em;
-  font-family: serif;
+#hero blockquote i {
+  font-size: 0.95em;
 }
-
-#hero blockquote a, #hero blockquote p a {
-  color: inherit;
-  font-style: inherit;
-  text-decoration: inherit;
+#hero blockquote .quote {
+  font-family: serif;
+  margin-bottom: 1em;
+  text-align: left;
+}
+#hero blockquote p {
+  text-align: right;
+}
+#hero blockquote p a {
+  color: rgb(167, 167, 167);
+  font-size: 0.95em;
 }
