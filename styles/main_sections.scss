@@ -130,5 +130,19 @@ section {
 }
 
 #uoftearless .shadow_container {
+    color: black;
     background-color: white;
+}
+
+#csb498 {
+    background-image: url("/media/csb/microarray.jpg");
+}
+#csb498 .shadow_container {
+    color: white;
+    background-color: black;
+    // background-image: url("/media/csb/microarray.jpg");
+
+    a {
+        color: lightgrey;
+    }
 }
