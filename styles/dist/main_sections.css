@@ -19,7 +19,6 @@ section {
   height: 100%;
   background-color: orange;
   background: #ffffff;
-  background: linear-gradient(90deg, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.692) 100%);
 }
 
 .img_container {
@@ -55,8 +54,14 @@ section {
 .even {
   flex-direction: row;
 }
+.even .shadow_container {
+  flex-direction: row;
+}
 
 .odd {
+  flex-direction: row-reverse;
+}
+.odd .shadow_container {
   flex-direction: row-reverse;
 }
 

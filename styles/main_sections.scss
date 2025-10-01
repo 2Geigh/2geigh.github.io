@@ -28,7 +28,7 @@ section {
     background-color: orange;
 
     background: #ffffff;
-    background: linear-gradient(90deg, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.692) 100%);
+    // background: linear-gradient(180deg, #0a0a0a 0%, rgba(0, 0, 0, 0) 25%);
 }
 
 .img_container {
@@ -73,10 +73,18 @@ section {
 
 .even {
     flex-direction: row;
+
+    .shadow_container {
+        flex-direction: row;
+    }
 }
 
 .odd {
     flex-direction: row-reverse;
+
+    .shadow_container {
+        flex-direction: row-reverse;
+    }
 }
 
 #pre-university {
