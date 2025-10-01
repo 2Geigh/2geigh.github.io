@@ -213,3 +213,21 @@ section {
         }
     }
 }
+
+footer {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    height: 90px;
+
+    font-size: 1.5em;
+
+    a {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+}
