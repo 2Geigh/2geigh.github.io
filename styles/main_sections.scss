@@ -40,9 +40,9 @@ section {
     height: 75%;
     width: 35%;
 
-    border-radius: 0px;
+    // border-radius: 20px;
 
-    background-color: none;
+    // background-color: none;
     // overflow-wrap: none;
     overflow: none;
     overflow-block:clip;
@@ -123,12 +123,25 @@ section {
     }
 }
 
+// #torjai-garcia {
+//     background: linear-gradient(0deg, red 0%, blue 100%);
+// }
 #torjai-garcia .shadow_container {
-    background-color: white;
-    background-image: url("/media/torjai-garcia/highway.jpg");
+    background: linear-gradient(90deg, black 0%, rgb(40, 0, 100) 100%);
+    // background-color: white;
+    // background-image: url("/media/torjai-garcia/highway.jpg");
     background-size: cover;
     background-position-y: 32.5%;
     background-repeat: no-repeat;
+    color: white;
+
+    .img_container {
+        height: 79.5%;
+    }
+
+    a {
+        color: lightgrey;
+    }
 }
 
 #uoftearless .shadow_container {

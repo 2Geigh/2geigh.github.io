@@ -28,8 +28,6 @@ section {
   flex-wrap: wrap;
   height: 75%;
   width: 35%;
-  border-radius: 0px;
-  background-color: none;
   overflow: none;
   overflow-block: clip;
 }
@@ -87,11 +85,17 @@ section {
 }
 
 #torjai-garcia .shadow_container {
-  background-color: white;
-  background-image: url("/media/torjai-garcia/highway.jpg");
+  background: linear-gradient(90deg, black 0%, rgb(40, 0, 100) 100%);
   background-size: cover;
   background-position-y: 32.5%;
   background-repeat: no-repeat;
+  color: white;
+}
+#torjai-garcia .shadow_container .img_container {
+  height: 79.5%;
+}
+#torjai-garcia .shadow_container a {
+  color: lightgrey;
 }
 
 #uoftearless .shadow_container {
