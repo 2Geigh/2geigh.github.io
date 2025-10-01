@@ -18,7 +18,6 @@ section {
   width: 100%;
   height: 100%;
   background-color: orange;
-  background: #ffffff;
 }
 
 .img_container {
@@ -49,6 +48,7 @@ section {
   font-size: 1.85em;
   line-height: 1.7em;
   font-family: sans-serif;
+  font-weight: 300;
 }
 
 .even {
@@ -65,18 +65,21 @@ section {
   flex-direction: row-reverse;
 }
 
-#pre-university {
-  background-color: maroon;
-  background-image: url("/media/pre-university/prairie.jpg");
+#pre-university .shadow_container {
+  background-color: white;
   background-size: cover;
   background-position: 20% 7%;
 }
 
-#rowing {
-  background-color: navy;
-  background-image: url("/media/rowing/lake.jpg");
+#rowing .shadow_container {
+  background-color: #002a51;
+  background: linear-gradient(90deg, #002a51 0%, black 100%);
   background-size: auto;
   background-repeat: no-repeat;
   background-position-y: 60%;
   background-position-x: 100%;
+  color: white;
+}
+#rowing .shadow_container .text_container a {
+  color: lightgrey;
 }

@@ -27,7 +27,7 @@ section {
 
     background-color: orange;
 
-    background: #ffffff;
+    // background: #ffffff;
     // background: linear-gradient(180deg, #0a0a0a 0%, rgba(0, 0, 0, 0) 25%);
 }
 
@@ -69,6 +69,7 @@ section {
     font-size: 1.85em;
     line-height: 1.7em;
     font-family: sans-serif;
+    font-weight: 300;
 }
 
 .even {
@@ -87,9 +88,9 @@ section {
     }
 }
 
-#pre-university {
-    background-color: maroon;
-    background-image: url("/media/pre-university/prairie.jpg");
+#pre-university .shadow_container {
+    background-color: white;
+    // background-image: url("/media/pre-university/prairie.jpg");
     // background: url("/media/pre-university/prairie.jpg"), linear-gradient(90deg, red 0%, blue 100%);
 
     // box-shadow: -50vw 0vw 100vw -0vw rgba(0, 0, 0, 0.458) inset;
@@ -100,11 +101,22 @@ section {
     background-position: 20% 7%;
 }
 
-#rowing {
-    background-color: navy;
-    background-image: url("/media/rowing/lake.jpg");
+#rowing .shadow_container {
+    background-color: #002a51;
+    background: linear-gradient(90deg, #002a51 0%, black 100%);
+    // background-image: url("/media/rowing/lake.jpg");
     background-size: auto;
     background-repeat: no-repeat;
     background-position-y: 60%;
     background-position-x: 100%;
+
+    color: white;
+
+    .text_container {
+        
+
+        a {
+            color: lightgrey;
+        }
+    }
 }
