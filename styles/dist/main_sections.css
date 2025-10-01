@@ -83,3 +83,11 @@ section {
 #rowing .shadow_container .text_container a {
   color: lightgrey;
 }
+
+#torjai-garcia .shadow_container {
+  background-color: white;
+  background-image: url("/media/torjai-garcia/highway.jpg");
+  background-size: cover;
+  background-position-y: 32.5%;
+  background-repeat: no-repeat;
+}
