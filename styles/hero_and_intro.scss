@@ -2,7 +2,7 @@ $background_dark_color: #0a0a0a;
 
 $header_height: min(30px, 2.75vh);
 
-$intro_profile_image_width: 400px;
+$intro_profile_image_width: clamp(0px, 40vh, 400px);
 
 $intro_text_ul_indent: 1em;
 
@@ -56,7 +56,7 @@ header {
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 90vh;
+    height: min(75vh, 900px);
 
     padding-top: $header_height;
 
@@ -65,12 +65,13 @@ header {
     background-repeat: no-repeat;
     background-position: top;
     background-size: cover;
+    transform: scaleY(-1);
 }
 #hero-image {
     width: $intro_profile_image_width;
     aspect-ratio: 1/1;
 
-    margin: 1.75vw;
+    margin-top: max(1.75vw, 20px);
 
     border-radius: 100%;
 
@@ -94,19 +95,23 @@ header {
     // filter: brightness(102%);
     // filter: contrast(106%);
     filter: grayscale(100%) hue-rotate(138deg);
+
+    transform: scaleY(-1);
 }
 #hero-image:hover {
     filter: none;
 }
 
 #splash-text {
-    font-size: 3em;
+    font-size: clamp(15px, 2vw, 3em);
+    font-weight:900;
 
     color: white;
 
     font-family: sans-serif;
 
     /* background-color: violet; */
+    transform: scaleY(-1);
 }
 #tagline {
     /* background-color: red; */
