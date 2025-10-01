@@ -139,14 +139,15 @@ header {
     font-weight: 100;
 
     // background-color: blue;
-}
-#intro-text ul {
-    margin-left: $intro_text_ul_indent;
 
-}
-#intro-text ul li {
-    margin: 0em;
-    font-weight: 350;
+    ul {
+        margin-left: $intro_text_ul_indent;
+
+        li {
+            margin: 0em;
+            font-weight: 350;
+        }
+    }
 }
 #hero blockquote {
 
