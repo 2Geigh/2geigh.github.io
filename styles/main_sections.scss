@@ -34,13 +34,15 @@ section {
 .img_container {
     display: inline-flex;
     flex-direction: row;
+    justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
     height: 75%;
     width: 35%;
 
     border-radius: 0px;
 
-    background-color: yellow;
+    background-color: none;
     // overflow-wrap: none;
     overflow: none;
     overflow-block:clip;
@@ -132,6 +134,14 @@ section {
 #uoftearless .shadow_container {
     color: black;
     background-color: white;
+
+    .img_container {
+
+        img {
+            height: 100%;
+            width: auto;
+        }
+    }
 }
 
 #csb498 {
