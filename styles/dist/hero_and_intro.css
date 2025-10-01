@@ -61,6 +61,11 @@ header {
   /* box-shadow: -200px 1px 89px -83px rgba(0,0,0,1) inset;
   -webkit-box-shadow: -200px 1px 89px -83px rgba(0,0,0,1) inset;
   -moz-box-shadow: -200px 1px 89px -83px rgba(0,0,0,1) inset; */
+  filter: grayscale(100%) hue-rotate(138deg);
+}
+
+#hero-image:hover {
+  filter: none;
 }
 
 #splash-text {

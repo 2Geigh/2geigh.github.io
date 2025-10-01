@@ -85,7 +85,20 @@ header {
     -moz-box-shadow: -200px 1px 89px -83px rgba(0,0,0,1) inset; */
 
     // background-color: red;
+    // filter: brightness(0);
+    // filter: saturate(100%);
+    // filter: invert(73%);
+    // filter: sepia(50%);
+    // filter: saturate(2875%);
+    // filter: hue-rotate(138deg);
+    // filter: brightness(102%);
+    // filter: contrast(106%);
+    filter: grayscale(100%) hue-rotate(138deg);
 }
+#hero-image:hover {
+    filter: none;
+}
+
 #splash-text {
     font-size: 3em;
 
