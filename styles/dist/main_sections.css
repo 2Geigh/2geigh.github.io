@@ -91,3 +91,7 @@ section {
   background-position-y: 32.5%;
   background-repeat: no-repeat;
 }
+
+#uoftearless .shadow_container {
+  background-color: white;
+}
