@@ -118,3 +118,32 @@ section {
 #csb498 .shadow_container a {
   color: lightgrey;
 }
+
+#present {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-top: 1px solid white;
+  background: black;
+  background-image: url("/media/urth.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: -20%;
+  padding-top: 0px;
+  padding-bottom: 10vh;
+}
+#present .text_container {
+  height: 60vh;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  font-weight: 400;
+  color: white;
+}
+#present .text_container h2 {
+  padding: 0px;
+  margin-top: -2%;
+  display: inline-block;
+  width: 100%;
+}
