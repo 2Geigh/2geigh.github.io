@@ -178,7 +178,7 @@ section {
     justify-content: center;
     align-items: center;
 
-    border-top: 1px solid white;
+    border-top: 1px solid lightgray;
 
     background: black;
     background-image: url("/media/urth.jpg");
@@ -193,6 +193,7 @@ section {
         height: 60vh;
         display: flex;
         justify-content: space-between;
+        align-items: center;
 
         text-align: center;
 
@@ -205,6 +206,10 @@ section {
             display: inline-block;
             width: 100%;
             // background-color: red;
+        }
+
+        a {
+        color: lightgrey;
         }
     }
 }
