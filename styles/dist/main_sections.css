@@ -174,10 +174,22 @@ section {
   background-color: white;
 }
 #uoftearless .shadow_container .img_container img {
-  height: 100%;
-  width: auto;
+  width: 100%;
+  object-position: 50% 30%;
+}
+#uoftearless .shadow_container .img_container .secondary_image {
+  display: none;
 }
 
+@media screen and (min-width: 1500px) {
+  #uoftearless .shadow_container .img_container img {
+    width: 41%;
+  }
+  #uoftearless .shadow_container .img_container .secondary_image {
+    display: inline;
+    width: 59%;
+  }
+}
 #csb498 {
   background-image: url("/media/csb/microarray.jpg");
 }
