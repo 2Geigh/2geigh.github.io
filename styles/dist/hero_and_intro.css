@@ -40,6 +40,7 @@ header {
   height: min(75vh, 900px);
   padding-bottom: min(30px, 2.75vh);
   background-color: #0a0a0a;
+  background: #0a0a0a;
   background-image: url("/media/Blue_Sky_with_Clouds.jpg");
   background-repeat: no-repeat;
   background-position: top;
