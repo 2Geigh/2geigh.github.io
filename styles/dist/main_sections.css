@@ -30,7 +30,7 @@ section {
   margin-bottom: 2em;
 }
 
-@media screen and (min-width: 1361px) {
+@media screen and (min-width: 1500px) {
   .shadow_container {
     padding-bottom: none;
   }
@@ -85,7 +85,7 @@ section {
   margin-bottom: 0.5em;
 }
 
-@media screen and (min-width: 1361px) {
+@media screen and (min-width: 1500px) {
   .text_container {
     margin-top: -2em;
     max-width: 800px;
@@ -103,8 +103,8 @@ section {
   flex-direction: row;
 }
 
-@media screen and (min-width: 1361px) {
-  .text_container {
+@media screen and (min-width: 1500px) {
+  .even .text_container {
     padding-right: 0px;
   }
 }
@@ -114,10 +114,12 @@ section {
 .odd .shadow_container {
   flex-direction: row-reverse;
 }
-.odd .text_container {
-  padding-left: 0px;
-}
 
+@media screen and (min-width: 1500px) {
+  .odd .text_container {
+    padding-left: 0px;
+  }
+}
 #pre-university .shadow_container {
   background-color: white;
   background-size: cover;
@@ -153,7 +155,13 @@ section {
   color: white;
 }
 #torjai-garcia .shadow_container .img_container {
+  flex-direction: column;
+  justify-content: center;
   height: 79.5%;
+}
+#torjai-garcia .shadow_container .img_container img {
+  width: 100%;
+  height: auto;
 }
 #torjai-garcia .shadow_container a {
   color: lightgrey;
