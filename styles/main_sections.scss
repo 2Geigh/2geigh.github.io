@@ -1,11 +1,12 @@
 $background_dark_color: #0a0a0a;
 $min_screenwidth_for_section_wrap: 1500px;
+$min_screenheight_for_planet_background: 680px;
 
 main {
     display: block;
     width: 100%;
 
-    background-color: grey;
+    background-color: black;
 }
 
 section {
@@ -302,7 +303,8 @@ $section-text_container_margintopbottom: 0.5em;
     }
 }
 
-
+$hero_blockquote_margintopbottom: min(4em, 9vh);
+$present-padding_top: calc($hero_blockquote_margintopbottom * 3);
 
 #present {
     display: flex;
@@ -310,39 +312,51 @@ $section-text_container_margintopbottom: 0.5em;
     justify-content: center;
     align-items: center;
 
-    border-top: 1px solid lightgray;
+    // border-top: 1px solid lightgray;
 
-    background: black;
-    background-image: url("/media/urth.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position-y: -20%;
+    // background: red;
 
-    padding-top: 0px;
-    padding-bottom: 10vh;
+    padding-top: $present-padding_top;
+    padding-bottom: $hero_blockquote_margintopbottom;
 
     .text_container {
-        height: 60vh;
         display: flex;
-        justify-content: space-between;
+        justify-content: start;
         align-items: center;
 
         text-align: center;
 
+        margin-top: calc($present-padding_top/(-1.2));
+
         font-weight: 400;
         color: white;
+        // background-color: orange;
 
         h2 {
             padding: 0px;
-            margin-top: -2%;
+            margin-top: 0%;
             display: inline-block;
             width: 100%;
             // background-color: red;
         }
 
         a {
-        color: lightgrey;
+            color: lightgrey;
         }
+    }
+}
+@media screen and (min-height: $min_screenheight_for_planet_background) and (min-width: $min_screenwidth_for_section_wrap) {
+    #present {
+
+        height: calc(100vh - calc($present-padding_top * 2));
+
+        padding-bottom: $present-padding_top;
+
+        background-image: url("/media/urth.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position-y: clamp(0px, 18.5em, 327.5px);
+        // background-position-y: 500%;
     }
 }
 
