@@ -138,7 +138,7 @@ header {
 
     width: 100%;
 
-    padding-top: min(2vh, 100px);
+    // padding-top: min(2vh, 100px);
 
     // padding-right: $intro_text_ul_indent;
 
@@ -159,7 +159,7 @@ header {
     $intro-text_leftright-padding: 7vw;
     padding-left: $intro-text_leftright-padding;
     padding-right: $intro-text_leftright-padding; 
-    padding-top: clamp(0.8em, 9vh, 100px);
+    padding-top: min(4em, 9vh);
 
     font-size: min(4vh, 1.85em, 24px);
     font-family: sans-serif;

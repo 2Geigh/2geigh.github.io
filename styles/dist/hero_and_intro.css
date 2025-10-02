@@ -92,7 +92,6 @@ header {
   align-items: center;
   justify-content: center;
   width: 100%;
-  padding-top: min(2vh, 100px);
   background-color: #0a0a0a;
   background: linear-gradient(180deg, #0a0a0a 0%, black 100%);
 }
@@ -105,7 +104,7 @@ header {
   width: clamp(300px, 90%, 800px);
   padding-left: 7vw;
   padding-right: 7vw;
-  padding-top: clamp(0.8em, 9vh, 100px);
+  padding-top: min(4em, 9vh);
   font-size: min(4vh, 1.85em, 24px);
   font-family: sans-serif;
   line-height: max(30px, 1.5em);
