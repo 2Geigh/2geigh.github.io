@@ -307,8 +307,19 @@ $section-text_container_margintopbottom: 0.5em;
     background-color: black;
     // background-image: url("/media/csb/microarray.jpg");
 
+    img {
+        object-position: 30% 50%;
+    }
+
     a {
         color: lightgrey;
+    }
+}
+@media screen and (min-width: $min_screenwidth_for_section_wrap) {
+    #csb498 .shadow_container {
+        img {
+            object-position: center;
+        }
     }
 }
 

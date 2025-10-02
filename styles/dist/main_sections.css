@@ -205,10 +205,18 @@ section {
   color: white;
   background-color: black;
 }
+#csb498 .shadow_container img {
+  object-position: 30% 50%;
+}
 #csb498 .shadow_container a {
   color: lightgrey;
 }
 
+@media screen and (min-width: 1500px) {
+  #csb498 .shadow_container img {
+    object-position: center;
+  }
+}
 #present {
   display: flex;
   flex-direction: column;
