@@ -243,16 +243,25 @@ $section-text_container_margintopbottom: 0.5em;
         flex-direction: column;
         justify-content: center;
 
-        height: 79.5%;
+        height: auto;
+        aspect-ratio: auto;
 
         img {
             width: 100%;
             height: auto;
+            margin: 0px 0px 0px 0px;
         }
     }
 
     a {
         color: lightgrey;
+    }
+}
+@media screen and (min-width: $min_screenwidth_for_section_wrap) {
+    #torjai-garcia .shadow_container {
+        .img_container {
+            height: 79.5%;
+        }
     }
 }
 

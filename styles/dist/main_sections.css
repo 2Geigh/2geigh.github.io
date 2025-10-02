@@ -159,16 +159,23 @@ section {
 #torjai-garcia .shadow_container .img_container {
   flex-direction: column;
   justify-content: center;
-  height: 79.5%;
+  height: auto;
+  aspect-ratio: auto;
 }
 #torjai-garcia .shadow_container .img_container img {
   width: 100%;
   height: auto;
+  margin: 0px 0px 0px 0px;
 }
 #torjai-garcia .shadow_container a {
   color: lightgrey;
 }
 
+@media screen and (min-width: 1500px) {
+  #torjai-garcia .shadow_container .img_container {
+    height: 79.5%;
+  }
+}
 #uoftearless .shadow_container {
   color: black;
   background-color: white;
