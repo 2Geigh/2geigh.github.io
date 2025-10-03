@@ -6,6 +6,10 @@ $intro_profile_image_width: clamp(0px, 40vh, 400px);
 
 $intro_text_ul_indent: min(2em, 8vw);
 
+$normal_font_weight: 350;
+$bolded_font_weight: 500;
+
+
 * {
     margin: 0;
     padding: 0;
@@ -165,7 +169,7 @@ header {
     font-size: min(4vh, 1.85em, 24px);
     font-family: sans-serif;
     line-height: max(30px, 1.5em);
-    font-weight: 100;
+    font-weight: $normal_font_weight;
 
     text-align:left;
 
@@ -181,7 +185,7 @@ header {
             $intro-text_ul_li_margin-top-bottom: min(0.75em, 3vh);
             margin-top: $intro-text_ul_li_margin-top-bottom;
             margin-bottom: $intro-text_ul_li_margin-top-bottom;
-            font-weight: 350;
+            font-weight: $bolded_font_weight;
         }
     }
 }

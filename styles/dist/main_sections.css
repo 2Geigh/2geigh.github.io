@@ -67,7 +67,7 @@ section {
   font-size: 0.8em;
   line-height: 200%;
   font-family: sans-serif;
-  font-weight: 300;
+  font-weight: 350;
 }
 .text_container h2 {
   display: inline-flex;
@@ -231,7 +231,7 @@ section {
   align-items: center;
   text-align: center;
   margin-top: calc(min(4em, 9vh) * 3 / -1.2);
-  font-weight: 400;
+  font-weight: 350;
   color: white;
 }
 #present .text_container h2 {

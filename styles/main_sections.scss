@@ -2,6 +2,9 @@ $background_dark_color: #0a0a0a;
 $min_screenwidth_for_section_wrap: 1500px;
 $min_screenheight_for_planet_background: 680px;
 
+$normal_font_weight: 350;
+$bolded_font_weight: 500;
+
 main {
     display: block;
     width: 100%;
@@ -103,7 +106,7 @@ $section-text_container_margintopbottom: 0.5em;
     font-size: 0.8em;
     line-height: 200%;
     font-family: sans-serif;
-    font-weight: 300;
+    font-weight: $normal_font_weight;
 
     h2 {
         display: inline-flex;
@@ -348,7 +351,7 @@ $present-padding_top: calc($hero_blockquote_margintopbottom * 3);
 
         margin-top: calc($present-padding_top/(-1.2));
 
-        font-weight: 400;
+        font-weight: $normal_font_weight;
         color: white;
         // background-color: orange;
 
