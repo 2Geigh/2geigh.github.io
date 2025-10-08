@@ -151,7 +151,7 @@ header {
     background: linear-gradient(180deg,$background_dark_color 0%, black 100%);
 }
 
-
+$hero_blockquote_margintopbottom: min(4em, 9vh);
 #intro-text {
     display: flex;
     flex-direction: column;
@@ -165,6 +165,7 @@ header {
     padding-left: $intro-text_leftright-padding;
     padding-right: $intro-text_leftright-padding; 
     padding-top: min(4em, 9vh);
+    padding-bottom: $hero_blockquote_margintopbottom;
 
     font-size: min(4vh, 1.85em, 24px);
     font-family: sans-serif;
@@ -199,9 +200,7 @@ header {
     align-items: end;
 
     background-color: $background_dark_color;
-    $hero_blockquote_margintopbottom: min(4em, 9vh);
     margin-top: $hero_blockquote_margintopbottom;
-    margin-bottom: $hero_blockquote_margintopbottom;
     
 
     width: clamp(0px, 70%, 600px);

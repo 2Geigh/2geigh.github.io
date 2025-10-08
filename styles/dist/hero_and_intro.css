@@ -105,6 +105,7 @@ header {
   padding-left: 7vw;
   padding-right: 7vw;
   padding-top: min(4em, 9vh);
+  padding-bottom: min(4em, 9vh);
   font-size: min(4vh, 1.85em, 24px);
   font-family: sans-serif;
   line-height: max(30px, 1.5em);
@@ -129,7 +130,6 @@ header {
   align-items: end;
   background-color: #0a0a0a;
   margin-top: min(4em, 9vh);
-  margin-bottom: min(4em, 9vh);
   width: clamp(0px, 70%, 600px);
   padding: 1em;
   border: 1px solid white;
