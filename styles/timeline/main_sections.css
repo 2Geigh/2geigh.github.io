@@ -21,12 +21,15 @@ section {
   padding-bottom: 2em;
   background-color: lime;
 }
-.shadow_container img, .shadow_container .img_container {
+.shadow_container img,
+.shadow_container .img_container {
   width: 85%;
   height: 27.5em;
   aspect-ratio: 1/1;
-  object-fit: cover;
-  object-position: center;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
   margin-bottom: 2em;
 }
 
@@ -34,7 +37,8 @@ section {
   .shadow_container {
     padding-bottom: none;
   }
-  .shadow_container img, .shadow_container .img_container {
+  .shadow_container img,
+  .shadow_container .img_container {
     width: clamp(280px, 40vw, 800px);
     margin-bottom: 0px;
   }
@@ -141,12 +145,14 @@ section {
   color: lightgrey;
 }
 #rowing .shadow_container img {
-  object-position: 20% 50%;
+  -o-object-position: 20% 50%;
+     object-position: 20% 50%;
 }
 
 @media screen and (min-width: min_screenwidth_for_section_wrap) {
   #rowing .shadow_container img {
-    object-position: center;
+    -o-object-position: center;
+       object-position: center;
   }
 }
 #torjai-garcia .shadow_container {
@@ -182,7 +188,8 @@ section {
 }
 #uoftearless .shadow_container .img_container img {
   width: 100%;
-  object-position: 50% 30%;
+  -o-object-position: 50% 30%;
+     object-position: 50% 30%;
 }
 #uoftearless .shadow_container .img_container .secondary_image {
   display: none;
@@ -206,7 +213,8 @@ section {
   background-color: black;
 }
 #csb498 .shadow_container img {
-  object-position: 30% 50%;
+  -o-object-position: 30% 50%;
+     object-position: 30% 50%;
 }
 #csb498 .shadow_container a {
   color: lightgrey;
@@ -214,7 +222,8 @@ section {
 
 @media screen and (min-width: 1500px) {
   #csb498 .shadow_container img {
-    object-position: center;
+    -o-object-position: center;
+       object-position: center;
   }
 }
 #present {
@@ -265,4 +274,4 @@ footer {
 footer a {
   margin-left: 10px;
   margin-right: 10px;
-}
+}/*# sourceMappingURL=main_sections.css.map */

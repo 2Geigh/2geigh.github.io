@@ -55,6 +55,7 @@ header {
     color: white;
     padding: 0%;
 }
+
 #splash-content {
     transform: scaleY(-1);
     display: flex;
@@ -74,6 +75,7 @@ header {
     background-position: top;
     background-size: cover;
 }
+
 #hero-image {
     transform: scaleY(-1);
     width: $intro_profile_image_width;
@@ -104,6 +106,7 @@ header {
     // filter: contrast(106%);
     // filter: grayscale(100%) hue-rotate(138deg);
 }
+
 #hero-image:hover {
     filter: none;
 }
@@ -122,6 +125,7 @@ header {
         font-weight: 1000;
     }
 }
+
 #tagline {
     /* background-color: red; */
     font-size: 0.715em;
@@ -148,22 +152,23 @@ header {
     // padding-right: $intro_text_ul_indent;
 
     background-color: $background_dark_color;
-    background: linear-gradient(180deg,$background_dark_color 0%, black 100%);
+    background: linear-gradient(180deg, $background_dark_color 0%, black 100%);
 }
 
 $hero_blockquote_margintopbottom: min(4em, 9vh);
+
 #intro-text {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    list-style-position:outside;
+    list-style-position: outside;
 
     // height: $intro_profile_image_width;
     width: clamp(300px, 90%, 800px);
 
     $intro-text_leftright-padding: 7vw;
     padding-left: $intro-text_leftright-padding;
-    padding-right: $intro-text_leftright-padding; 
+    padding-right: $intro-text_leftright-padding;
     padding-top: min(4em, 9vh);
     padding-bottom: $hero_blockquote_margintopbottom;
 
@@ -172,7 +177,7 @@ $hero_blockquote_margintopbottom: min(4em, 9vh);
     line-height: max(30px, 1.5em);
     font-weight: $normal_font_weight;
 
-    text-align:left;
+    text-align: left;
 
     // background-color: blue;
 
@@ -190,6 +195,7 @@ $hero_blockquote_margintopbottom: min(4em, 9vh);
         }
     }
 }
+
 #hero blockquote {
 
     $hero_blockquote_fontsize: 0.95em;
@@ -201,7 +207,7 @@ $hero_blockquote_margintopbottom: min(4em, 9vh);
 
     background-color: $background_dark_color;
     margin-top: $hero_blockquote_margintopbottom;
-    
+
 
     width: clamp(0px, 70%, 600px);
     // padding-left: 1vw;

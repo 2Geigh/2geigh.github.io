@@ -53,8 +53,10 @@ header {
   aspect-ratio: 1/1;
   margin-top: max(1.75vw, 20px);
   border-radius: 100%;
-  object-fit: cover;
-  object-position: center;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
   /* border-top-left-radius: 500px; */
   /* border-bottom-left-radius: 500px; */
   /* box-shadow: -200px 1px 89px -83px rgba(0,0,0,1) inset;
@@ -149,4 +151,4 @@ header {
 #hero blockquote p a {
   color: rgb(167, 167, 167);
   font-size: 0.95em;
-}
+}/*# sourceMappingURL=hero_and_intro.css.map */
