@@ -127,6 +127,7 @@ section {
   }
 }
 #pre-university .shadow_container {
+  color: black;
   background-color: white;
   background-size: cover;
   background-position: 20% 7%;

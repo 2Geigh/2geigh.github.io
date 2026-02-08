@@ -53,7 +53,7 @@ body {
   width: 90vw;
   text-wrap: wrap;
   word-break: normal;
-  font-size: 1em;
+  font-size: min(4.5vw, 1.1rem);
 }
 #idCard .text #subHeader a {
   color: inherit;

@@ -8,7 +8,6 @@ $bolded_font_weight: 500;
 main {
     display: block;
     width: 100%;
-
     background-color: black;
 }
 
@@ -20,6 +19,7 @@ section {
     // padding-top: 30px;
     // padding-bottom: 30px;
 }
+
 
 $shadow_container-paddingtopbottom: 2em;
 
@@ -188,6 +188,7 @@ $section-text_container_margintopbottom: 0.5em;
 }
 
 #pre-university .shadow_container {
+    color: black;
     background-color: white;
     // background-image: url("/media/pre-university/prairie.jpg");
     // background: url("/media/pre-university/prairie.jpg"), linear-gradient(90deg, red 0%, blue 100%);
@@ -198,6 +199,9 @@ $section-text_container_margintopbottom: 0.5em;
     // -moz-box-shadow: 197px 1px 88px -41px rgba(0,0,0,0.75) inset;
     background-size: cover;
     background-position: 20% 7%;
+
+
+
 }
 
 #rowing .shadow_container {

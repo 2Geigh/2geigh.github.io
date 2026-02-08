@@ -84,9 +84,7 @@ body {
 
 			text-wrap: wrap;
 			word-break: normal;
-			font-size: 1em;
-
-
+			font-size: min(4.5vw, 1.1rem);
 
 			a {
 				color: inherit;
