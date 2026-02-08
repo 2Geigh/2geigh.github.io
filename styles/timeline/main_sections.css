@@ -231,6 +231,9 @@ section {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  min-height: 100vh;
+  background-color: black;
+  background: linear-gradient(180deg, black 0%, rgb(0, 104, 133) 100%);
   padding-top: calc(min(4em, 9vh) * 3);
   padding-bottom: min(4em, 9vh);
 }
@@ -239,7 +242,6 @@ section {
   justify-content: start;
   align-items: center;
   text-align: center;
-  margin-top: calc(min(4em, 9vh) * 3 / -1.2);
   font-weight: 350;
   color: white;
 }
@@ -250,19 +252,15 @@ section {
   width: 100%;
 }
 #present .text_container a {
+  font-family: inherit;
   color: lightgrey;
+  font-size: inherit;
+}
+#present .text_container a i {
+  font-size: inherit;
+  font-family: inherit;
 }
 
-@media screen and (min-height: 680px) and (min-width: 1500px) {
-  #present {
-    height: calc(100vh - min(4em, 9vh) * 3 * 2);
-    padding-bottom: calc(min(4em, 9vh) * 3);
-    background-image: url("/media/urth.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position-y: clamp(0px, 18.5em, 327.5px);
-  }
-}
 footer {
   display: flex;
   flex-direction: row;
