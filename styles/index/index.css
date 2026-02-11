@@ -122,7 +122,7 @@ body {
 }
 .content #sheet .section nav a h3 .version {
   font-weight: normal;
-  opacity: 50%;
+  opacity: 80%;
 }
 .content #sheet .section nav a .description {
   text-wrap: wrap;

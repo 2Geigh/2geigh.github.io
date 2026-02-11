@@ -20,9 +20,11 @@ body {
 	font-family: monospace;
 
 	background-color: #00aae4;
-	background: linear-gradient(180deg,
-			light-dark($BG_LIGHT_1, $BG_DARK_1) 0%,
-			light-dark($BG_LIGHT_2, $BG_DARK_2) 100%);
+	background: linear-gradient(
+		180deg,
+		light-dark($BG_LIGHT_1, $BG_DARK_1) 0%,
+		light-dark($BG_LIGHT_2, $BG_DARK_2) 100%
+	);
 }
 
 #idCard {
@@ -34,7 +36,7 @@ body {
 	width: 100%;
 
 	padding-top: 2rem;
-	padding-bottom: min(.5vw, 3rem);
+	padding-bottom: min(0.5vw, 3rem);
 
 	box-sizing: border-box;
 
@@ -71,7 +73,7 @@ body {
 			font-size: min(15vw, 5rem);
 			font-weight: bold;
 			letter-spacing: 0.5rem;
-			line-height: .88em;
+			line-height: 0.88em;
 			font-family: georgia, serif;
 
 			margin-bottom: 0.5rem;
@@ -108,7 +110,6 @@ body {
 
 	color: white;
 	// background-color: white;
-
 
 	#sheet {
 		display: flex;
@@ -181,7 +182,7 @@ body {
 
 						.version {
 							font-weight: normal;
-							opacity: 50%;
+							opacity: 80%;
 						}
 					}
 
@@ -211,7 +212,7 @@ body {
 
 		width: 100%;
 
-		margin-top: min(2vw, .5rem);
+		margin-top: min(2vw, 0.5rem);
 
 		box-sizing: border-box;
 
@@ -231,9 +232,8 @@ body {
 			display: flex;
 			flex-direction: row;
 
-			margin-top: .5rem;
+			margin-top: 0.5rem;
 			margin-left: -1rem;
-
 
 			a {
 				display: flex;
