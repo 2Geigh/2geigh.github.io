@@ -1,0 +1,8 @@
+services:
+    client:
+        build:
+            context: .
+        image: nicholasgarcia.com:latest
+        ports:
+            - "8083:80"
+        restart: always
