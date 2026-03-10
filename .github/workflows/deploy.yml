@@ -8,6 +8,7 @@ on:
 jobs:
     deploy:
         runs-on: ubuntu-latest
+        environment: Hostinger-VPS-1
         steps:
             - name: Execute SSH Commands on VPS
               uses: appleboy/ssh-action@v1.0.3
