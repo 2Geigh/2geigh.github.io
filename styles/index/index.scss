@@ -201,6 +201,34 @@ body {
 				// margin-bottom: 0;
 				// }
 			}
+
+			&#designs {
+				margin-top: 3em;
+
+				// background-color: red;
+
+				h2 {
+					text-align: right;
+				}
+
+				nav {
+					width: 100%;
+
+					a {
+						.name {
+							width: 100%;
+							// text-align: right;
+
+							font-weight: normal;
+						}
+
+						.description {
+							width: 100%;
+							// text-align: right;
+						}
+					}
+				}
+			}
 		}
 	}
 
